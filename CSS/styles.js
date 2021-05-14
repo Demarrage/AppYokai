@@ -56,9 +56,11 @@ export const styleFormat = StyleSheet.create({
     fontSize: 20,
   },
   cxinput: {
-    backgroundColor: "#212121",
+    backgroundColor: "#000",
     padding: 10,
     marginTop: 10,
     marginBottom: 5,
+    opacity:0.5 
+
   },
 });
