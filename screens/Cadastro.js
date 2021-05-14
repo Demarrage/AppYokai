@@ -39,13 +39,14 @@ export default function Cadastro() {
   const [email, setEmail] = React.useState("");
 
   return (
-    <View>
+    <View style={styleFormat.container}>
       <ScrollView horizontal={false}>
         {/* area do cadastro de ususario */}
-        <View>
+        <View style={styleFormat.cxinput}>
           <TextInput
             style={styleFormat.input}
             placeholder="Nome Usuário"
+            placeholderTextColor="white"
             value={usuario}
             keyboardType="email-address"
             onChangeText={(value) => setUsuario(value)}
@@ -54,6 +55,7 @@ export default function Cadastro() {
           <TextInput
             style={styleFormat.input}
             placeholder="Senha"
+            placeholderTextColor="white"
             value={senha}
             keyboardType="default"
             secureTextEntry
@@ -61,45 +63,51 @@ export default function Cadastro() {
           />
         </View>
         {/* Fim da area de cadastro do cliente */}
-        <TextInput
-          style={styleFormat.input}
-          placeholder="Nome Cliente"
-          value={nomeCliente}
-          keyboardType="default"
-          onChangeText={(value) => setNomeCliente(value)}
-        />
+        <View style={styleFormat.cxinput}>
+          <TextInput
+            style={styleFormat.input}
+            placeholder="Nome Cliente"
+            placeholderTextColor="white"
+            value={nomeCliente}
+            keyboardType="default"
+            onChangeText={(value) => setNomeCliente(value)}
+          />
 
-        <TextInput
-          style={styleFormat.input}
-          placeholder="CPF"
-          value={cpf}
-          keyboardType="number-pad"
-          onChangeText={(value) => setCPF(value)}
-        />
+          <TextInput
+            style={styleFormat.input}
+            placeholder="CPF"
+            placeholderTextColor="white"
+            value={cpf}
+            keyboardType="number-pad"
+            onChangeText={(value) => setCPF(value)}
+          />
 
-        <Picker
-          mode="dropdown"
-          selectedValue={sexo}
-          onValueChange={setSexo}
-          style={styleFormat.input}
-        >
-          <Picker.Item label="Masculino" value="M" />
-          <Picker.Item label="Feminino" value="F" />
-          <Picker.Item label="Outros" value="O" />
-        </Picker>
+          <Picker
+            mode="dropdown"
+            selectedValue={sexo}
+            onValueChange={setSexo}
+            style={styleFormat.input}
+          >
+            <Picker.Item label="Masculino" value="M" />
+            <Picker.Item label="Feminino" value="F" />
+            <Picker.Item label="Outros" value="O" />
+          </Picker>
 
-        <TextInput
-          style={styleFormat.input}
-          placeholder="Nome Usuário"
-          value={usuario}
-          keyboardType="email-address"
-          onChangeText={(value) => setUsuario(value)}
-        />
+          <TextInput
+            style={styleFormat.input}
+            placeholder="Nome Usuário"
+            placeholderTextColor="white"
+            value={usuario}
+            keyboardType="email-address"
+            onChangeText={(value) => setUsuario(value)}
+          />
+        </View>
         {/* area do cadastro de endereço */}
-        <View>
+        <View style={styleFormat.cxinput}>
           <TextInput
             style={styleFormat.input}
             placeholder="Logradouro"
+            placeholderTextColor="white"
             value={logradouro}
             keyboardType="default"
             onChangeText={(value) => setLogradouro(value)}
@@ -107,6 +115,7 @@ export default function Cadastro() {
           <TextInput
             style={styleFormat.input}
             placeholder="Numero"
+            placeholderTextColor="white"
             value={numero}
             keyboardType="default"
             onChangeText={(value) => setNumero(value)}
@@ -114,6 +123,7 @@ export default function Cadastro() {
           <TextInput
             style={styleFormat.input}
             placeholder="Complemento"
+            placeholderTextColor="white"
             value={complemento}
             keyboardType="default"
             onChangeText={(value) => setComplemento(value)}
@@ -121,6 +131,7 @@ export default function Cadastro() {
           <TextInput
             style={styleFormat.input}
             placeholder="Bairro"
+            placeholderTextColor="white"
             value={bairro}
             keyboardType="default"
             onChangeText={(value) => setBairro(value)}
@@ -128,6 +139,7 @@ export default function Cadastro() {
           <TextInput
             style={styleFormat.input}
             placeholder="CEP"
+            placeholderTextColor="white"
             value={cep}
             keyboardType="number-pad"
             onChangeText={(value) => setCEP(value)}
@@ -135,6 +147,7 @@ export default function Cadastro() {
           <TextInput
             style={styleFormat.input}
             placeholder="E-mail"
+            placeholderTextColor="white"
             value={email}
             keyboardType="email-address"
             onChangeText={(value) => setEmail(value)}

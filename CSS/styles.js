@@ -32,4 +32,33 @@ export const styleFormat = StyleSheet.create({
     justifyContent: "center",
     flex: 1,
   },
+  input: {
+    width: 300,
+    padding: 5,
+    color: "white",
+    marginBottom: 10,
+    borderBottomColor: "silver",
+    borderBottomWidth: 1,
+  },
+  btnCadastro: {
+    marginTop: 50,
+    marginBottom: 50,
+    backgroundColor: "#e62c4f",
+    padding: 20,
+    marginLeft: "auto",
+    marginRight: "auto",
+    borderRadius: 20,
+  },
+  txtCadastro: {
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center",
+    fontSize: 20,
+  },
+  cxinput: {
+    backgroundColor: "#212121",
+    padding: 10,
+    marginTop: 10,
+    marginBottom: 5,
+  },
 });
