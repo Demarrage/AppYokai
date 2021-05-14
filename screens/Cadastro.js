@@ -77,6 +77,17 @@ export default function Cadastro() {
           onChangeText={(value) => setCPF(value)}
         />
 
+        <Picker
+          mode="dropdown"
+          selectedValue={sexo}
+          onValueChange={setSexo}
+          style={styleFormat.input}
+        >
+          <Picker.Item label="Masculino" value="M" />
+          <Picker.Item label="Feminino" value="F" />
+          <Picker.Item label="Outros" value="O" />
+        </Picker>
+
         <TextInput
           style={styleFormat.input}
           placeholder="Nome Usuário"
